@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,11 +40,10 @@
 <body id="page-top">
 
   <!--/ Nav Star /-->
-  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top " id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll" href="#page-top"></a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+     
         <span></span>
         <span></span>
         <span></span>
@@ -68,29 +69,29 @@
           </button>
         </div>
         <div class="modal-body">
-          <form>
+          <form name=insertvalues action="insertvalues.php" method="post">
             <div class="form-group">
               <label for="user-name" class="col-form-label">Name:</label>
-              <input type="text" class="form-control validate" id="user-name">
+              <input type="text" class="form-control validate" id="user-name" name="username">
             </div>
             <div class="form-group">
               <label for="user-email" class="col-form-label">Place:</label>
-              <input type="text" class="form-control validate" id="place-name">
+              <input type="text" class="form-control validate" id="place-name" name="placename">
             </div>
             <div class="form-group">
               <label for="num" class="col-form-label">Contact Number:</label>
-              <input type="number" class="form-control validate" id="contactnumber">
+              <input type="number" class="form-control validate" id="contactnumber" name="contactnumber">
             </div>
             <div class="form-group">
               <label for="user-email" class="col-form-label">Email ID:</label>
-              <input type="email" class="form-control validate" id="email-name">
+              <input type="email" class="form-control validate" id="email-name" name="emailname">
             </div>
           
-          </form>
+          
         </div>
         <div class="modal-footer">
           
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Submit</button></form>
         </div>
       </div>
     </div>
@@ -106,8 +107,26 @@
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="intro-title mb-4">SRESHTA 2020</h1>
+      <!--    <h1 class="intro-title mb-4">SRESHTA 2020</h1>     -->
+          
+
+          <!-- progress bar -->
+          <div class="clearfix" >
+          <div class="c100 p50 big dark green">
+                        <span>50%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                      </div>
+
+          <!-- progress bar -->
+
+
+
           <p class="intro-subtitle"><span class="text-slider-items">Lead the scene, Keep it Green!</span><strong class="text-slider"></strong></p>
+        <!--  <p class="intro-subtitle"><span class="text-slider-items">Keep it Green!</span><strong class="text-slider"></strong></p>  -->
           <br> <br><br><br> 
           <a href="" class="btn-get-started scrollto" data-toggle="modal" data-target="#modalLoginForm" >Pledge</a>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
